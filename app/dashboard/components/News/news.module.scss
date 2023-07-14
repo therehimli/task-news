@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.078);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.edit {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.title {
+  margin: 5px;
+}
+
+.description {
+  padding: 10px;
+  margin-top: 15px;
+  border-top: 0.3px solid black;
+}
