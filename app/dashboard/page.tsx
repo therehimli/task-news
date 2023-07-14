@@ -29,14 +29,15 @@ export default function Dashboard() {
     <main>
       <CreateNews news={news} setNews={setNews} />
       <div className={styles.newsWrapper}>
-        {news.map((item: INews) => (
-          <News
-            onToggle={onToggleHandler}
-            onDelete={onDeleteHandler}
-            key={item.id}
-            news={item}
-          />
-        ))}
+        {news &&
+          news.map((item: INews) => (
+            <News
+              onToggle={onToggleHandler}
+              onDelete={onDeleteHandler}
+              key={item.id}
+              news={item}
+            />
+          ))}
       </div>
     </main>
   )
