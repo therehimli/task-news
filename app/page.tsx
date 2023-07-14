@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className={styles.wrapper}>
       {news.map((item: INews) => (
-        <News news={item} />
+        <News key={item.id} news={item} />
       ))}
     </main>
   )
