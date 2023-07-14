@@ -8,9 +8,7 @@ import { useEffect, useState } from 'react'
 export default function Home() {
   const [news, setNews] = useState<INews[]>([])
 
-  useEffect(() => {
-    setNews(JSON.parse(window.localStorage.getItem('news') || ''))
-  }, [])
+  JSON.parse(window.localStorage.getItem('news') || '')
 
   return (
     <main className={styles.wrapper}>
